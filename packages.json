@@ -1,4 +1,5 @@
 {
-  "request"    : "2.34.0",
-  "feedparser" : "0.16.6"
+  "request"      : "2.34.0",
+  "feedparser"   : "0.16.6",
+  "predictionio" : "0.0.7"
 }

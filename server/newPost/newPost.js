@@ -7,13 +7,13 @@ var isWebAddress = function (value) {
 Meteor.methods({
   newPost : function (obj) {
     "use strict";
+    console.log(prediction);
     if (obj.title.length < 3) {
       throw 'Title must be longer than 3 characters';
     }
     if (isWebAddress(obj.url) === false) {
       throw 'URL must start with either "http://" or "https://"';
     }
-
 
     Posts.insert({
       time: new Date(),
